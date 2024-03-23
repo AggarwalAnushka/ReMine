@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> -->
+
+  <style>
+    /*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+/**
+ * colors
+ */
+
+--bright-yellow-crayola: hsl(40, 100%, 50%);
+--medium-turquoise: hsl(172, 48%, 59%);
+--silver-chalice: hsl(0, 0%, 70%);
+--eerie-black-1: hsl(0, 0%, 13%);
+--eerie-black-2: hsl(0, 0%, 15%);
+--eerie-black-3: hsl(228, 10%, 10%);
+--raisin-black: hsl(220, 8%, 14%);
+--granite-gray: hsl(0, 0%, 38%);
+--sonic-silver: hsl(0, 0%, 47%);
+--pistachio_50: hsla(86, 45%, 54%, 0.5);
+--baby-powder: hsl(86, 41%, 97%);
+--light-gray: hsl(0, 0%, 80%);
+--pistachio: hsl(43, 66%, 58%);
+--platinum: hsl(0, 0%, 91%);
+--cultured: hsl(0, 0%, 94%);
+--white-60: hsla(0, 0%, 100%, 0.6);
+--white_50: hsla(0, 0%, 100%, 0.5);
+--white_10: hsla(0, 0%, 100%, 0.1);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--jet: hsl(0, 0%, 18%);
+
+/**
+ * typography
+ */
+
+--ff-oswald: 'Oswald', sans-serif;
+--ff-inter: 'Inter', sans-serif;
+--ff-roboto: 'Roboto', sans-serif;
+
+--fs-1: 13rem;
+--fs-2: 4rem;
+--fs-3: 3.5rem;
+--fs-4: 3rem;
+--fs-5: 2.4rem;
+--fs-6: 2.2rem;
+--fs-7: 2rem;
+--fs-8: 1.8rem;
+--fs-9: 1.5rem;
+--fs-10: 1.4rem;
+
+--fw-300: 300;
+--fw-500: 500;
+--fw-600: 600;
+--fw-700: 700;
+
+/**
+ * spacing
+ */
+
+--section-padding: 80px;
+
+/**
+ * shadow
+ */
+
+--card-shadow: 0 5px 20px -8px hsla(0, 0%, 0%, 0.15);
+
+/**
+ * transition
+ */
+
+--transition-1: 0.05s ease;
+--transition-2: 0.25s ease;
+--cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+--cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+a,
+img,
+span,
+time,
+input,
+strong,
+button,
+ion-icon { display: block; }
+
+img { height: auto; }
+
+ion-icon { pointer-events: none; }
+
+input,
+button {
+background: none;
+border: none;
+font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+:focus-visible { outline-offset: 4px; }
+
+::selection { background-color: var(--white_10); }
+
+html {
+font-family: var(--ff-roboto);
+color: var(--granite-gray);
+font-size: 10px;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--white);
+font-size: 1.6rem;
+line-height: 1.8;
+overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 13px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
+
+::-webkit-scrollbar-thumb { background-color: var(--pistachio); }
+
+
+
+
+
+/*-----------------------------------*\
+#REUSED STYLE
+\*-----------------------------------*/
+
+.container { padding-inline: 15px; }
+
+.section-subtitle {
+color: var(--color, var(--pistachio));
+font-size: var(--fs, var(--fs-8));
+font-family: var(--ff, var(--ff-roboto));
+font-weight: var(--fw-600);
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.h1,
+.h2 { font-weight: var(--fw-300); }
+
+.h2,
+.h3 { line-height: 1.6; }
+
+.h2 {
+font-size: var(--fs-3);
+color: var(--eerie-black-2);
+}
+
+.h3 {
+font-size: var(--fs-5);
+color: var(--eerie-black-2);
+}
+
+.h4 {
+color: var(--white);
+font-size: var(--fs-6);
+}
+
+.btn {
+position: relative;
+background-color: var(--btn-bg, var(--pistachio));
+color: var(--white);
+font-weight: var(--fw-600);
+padding: 12px 32px;
+display: flex;
+align-items: center;
+gap: 10px;
+transition: var(--transition-2);
+}
+
+.btn ion-icon {
+--ionicon-stroke-width: 55px;
+font-size: 1.8rem;
+}
+
+.btn:not(.btn-outline)::after {
+content: "";
+position: absolute;
+inset: 0;
+border: 1px solid var(--btn-bg, var(--pistachio));
+transform: translate(5px, 5px);
+transition: var(--transition-2);
+}
+
+.btn:is(:hover, :focus)::after { transform: translate(0, 0); }
+
+.btn-secondary { --btn-bg: var(--black); }
+
+.btn-secondary:is(:hover, :focus) { --btn-bg: var(--pistachio); }
+
+.btn-outline {
+border: 2px solid var(--white);
+background-color: transparent;
+}
+
+.btn-white {
+--btn-bg: var(--platinum);
+color: var(--black);
+}
+
+.section { padding-block: var(--section-padding); }
+
+.w-100 { width: 100%; }
+
+.section-text { line-height: 2; }
+
+.img-cover {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+
+/*-----------------------------------*\
+#HEADER
+\*-----------------------------------*/
+
+/* .lang-switch,
+.header-action { display: none; } */
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: transparent;
+padding-block: 18px;
+z-index: 4;
+}
+
+.header::after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: calc(100% - 140px);
+height: 1px;
+background-color: var(--white_10);
+}
+
+.header.active {
+background-color: var(--eerie-black-1);
+box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.8);
+}
+
+.header.active::after { display: none; }
+
+.header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+}
+
+.logo {
+color: var(--white);
+font-family: var(--ff-oswald);
+font-size: 3.2rem;
+text-transform: uppercase;
+}
+
+.nav-open-btn {
+color: var(--white);
+font-size: 3.8rem;
+}
+
+.navbar {
+position: fixed;
+background-color: var(--eerie-black-1);
+top: 100%;
+left: 0;
+width: 100%;
+height: 100%;
+outline: 1px solid var(--white_10);
+display: flex;
+flex-direction: column;
+z-index: 1;
+visibility: hidden;
+transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active {
+transform: translateY(-100%);
+visibility: visible;
+transition: 0.5s var(--cubic-out);
+}
+
+.nav-close-btn {
+color: var(--white);
+font-size: 2.4rem;
+position: absolute;
+top: 15px;
+right: 15px;
+}
+
+.nav-close-btn ion-icon { --ionicon-stroke-width: 60px; }
+
+.navbar > .logo {
+font-size: 4rem;
+width: max-content;
+margin-inline: auto;
+margin-block-start: 50px;
+}
+
+.navbar-list {
+max-width: 400px;
+width: 100%;
+margin: auto;
+padding-inline: 10px;
+opacity: 0;
+transition: 0.5s ease;
+transition-delay: 0s;
+}
+
+.navbar.active .navbar-list {
+opacity: 1;
+transition-delay: 0.25s;
+}
+
+.navbar-link {
+color: var(--white);
+font-size: var(--fs-9);
+font-weight: var(--fw-500);
+text-transform: uppercase;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-inline: 10px 15px;
+padding-block: 8px;
+transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { background-color: var(--pistachio); }
+
+
+
+
+
+/*-----------------------------------*\
+#HERO
+\*-----------------------------------*/
+
+.hero {
+background-color: var(--eerie-black-1);
+color: var(--white);
+min-height: 700px;
+padding-block: 120px 60px;
+display: grid;
+align-items: center;
+}
+
+.hero .section-subtitle {
+--color: var(--white);
+--ff: var(--ff-inter);
+--fs: var(--fs-7);
+}
+
+.hero-title {
+font-size: var(--fs-2);
+margin-block: 30px;
+line-height: 1.2;
+}
+
+.hero-text {
+font-family: var(--ff-inter);
+font-size: var(--fs-8);
+letter-spacing: -1px;
+max-width: 50ch;
+margin-block-end: 30px;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#FEATURES
+\*-----------------------------------*/
+
+.features {
+padding-block-start: 0;
+background-color: var(--eerie-black-1);
+}
+
+.features-list {
+display: grid;
+gap: 30px;
+}
+
+.features-item {
+display: flex;
+align-items: flex-start;
+gap: 25px;
+}
+
+.features-item .item-icon {
+color: var(--pistachio);
+font-size: 5.5rem;
+margin-block-start: 10px;
+} 
+
+.features-item .item-icon ion-icon { --ionicon-stroke-width: 25px; }
+
+.features-item .item-title { margin-block-end: 10px; }
+
+.features-item .item-text {
+max-width: 25ch;
+color: var(--white_50);
+font-size: var(--fs-9);
+}
+
+
+
+
+
+/*-----------------------------------*\
+#ABOUT
+\*-----------------------------------*/
+
+.about { padding-block-start: 120px; }
+
+.about-banner {
+position: relative;
+max-width: max-content;
+margin-block-end: 30px;
+}
+
+.deco-title {
+font-size: var(--fs-1);
+font-weight: var(--fw-700);
+white-space: nowrap;
+line-height: 0.5;
+color: transparent;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 1px var(--light-gray);
+transform-origin: top left;
+transform: rotate(0.25turn);
+position: absolute;
+top: 55%;
+left: 100%;
+z-index: -1;
+}
+
+.deco-img {
+position: absolute;
+top: -40px;
+left: 0;
+z-index: -1;
+}
+
+.about-img {
+max-width: max-content;
+margin-block-end: 30px;
+}
+
+.about .section-subtitle { margin-block-end: 10px; }
+
+.tab-nav {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+margin-block: 25px 35px;
+}
+
+.tab-btn {
+background-color: var(--platinum);
+color: var(--granite-gray);
+font-size: var(--fs-8);
+font-weight: var(--fw-500);
+padding: 10px 32px;
+}
+
+.tab-btn.active {
+background-color: var(--pistachio);
+color: var(--white);
+}
+
+.tab-list { margin-block: 25px 50px; }
+
+.tab-item {
+display: flex;
+align-items: center;
+gap: 10px;
+padding-block: 5px;
+}
+
+.tab-item .item-icon {
+font-size: 3rem;
+color: var(--pistachio);
+}
+
+.tab-text {
+color: var(--eerie-black-2);
+font-size: var(--fs-8);
+font-weight: var(--fw-500);
+}
+
+
+
+
+
+/*-----------------------------------*\
+#CTA
+\*-----------------------------------*/
+
+.cta-content {
+background-color: var(--pistachio);
+text-align: center;
+padding: 50px 15px;
+margin-block-end: 10px;
+}
+
+.cta .section-title {
+color: var(--white);
+font-size: var(--fs-2.5);
+font-weight: var(--fw-600);
+line-height: 1.2;
+margin-block-end: 15px;
+}
+
+.cta .btn-outline { margin-inline: auto; }
+
+.cta-banner { background-color: var(--light-gray); }
+
+
+
+
+
+/*-----------------------------------*\
+#SERVICE
+\*-----------------------------------*/
+
+.service {
+background-color: var(--baby-powder);
+background-repeat: no-repeat;
+background-position: center top;
+margin-block-start: -200px;
+padding-block-start: 200px;
+}
+
+.service .section-title { margin-block: 10px 40px; }
+
+.service-list {
+display: grid;
+gap: 30px;
+}
+
+.service-card {
+background-color: var(--white);
+text-align: left;
+padding: 45px 40px;
+border-radius: 2px;
+outline: 3px solid transparent;
+box-shadow: var(--card-shadow);
+transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) { outline-color: var(--pistachio); }
+
+.service-card .card-icon {
+color: var(--pistachio);
+font-size: 7rem;
+max-width: max-content;
+margin-inline: auto;
+}
+
+.service-card .card-icon ion-icon { --ionicon-stroke-width: 20px; }
+
+.service-card .card-title {
+letter-spacing: -1px;
+margin-block: 10px;
+}
+
+.service-card .card-text { font-family: var(--ff-inter); }
+
+.btn-link {
+display: flex;
+justify-content: left;
+align-items: center;
+gap: 5px;
+color: var(--silver-chalice);
+font-size: var(--fs-8);
+font-weight: var(--fw-600);
+margin-block-start: 15px;
+}
+
+.btn-link span { text-decoration: underline; }
+
+
+
+
+
+/*-----------------------------------*\
+#DONATE
+\*-----------------------------------*/
+
+.donate-list {
+display: grid;
+gap: 60px;
+}
+
+.donate-card { box-shadow: var(--card-shadow); }
+
+.donate-card .card-banner { background-color: var(--light-gray); }
+
+.donate-card .card-content {
+background-color: var(--white);
+padding: 35px;
+}
+
+.progress-wrapper {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.progress-text {
+display: flex;
+gap: 5px;
+font-size: var(--fs-8);
+}
+
+.progress-text data {
+color: var(--eerie-black-2);
+font-weight: var(--fw-600);
+}
+
+.donate-card .card-title { --fs-5: 2.1rem; }
+
+.progress-box {
+background-color: var(--cultured);
+border-radius: 20px;
+margin-block: 10px 20px;
+}
+
+.progress {
+height: 6px;
+width: 83%;
+background-color: var(--pistachio);
+border-radius: inherit;
+}
+
+.progress-value {
+color: var(--pistachio);
+font-size: var(--fs-7);
+font-weight: var(--fw-600);
+}
+
+.card-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+gap: 5px;
+margin-block: 15px;
+}
+
+.donate-card .card-wrapper-text {
+display: flex;
+gap: 5px;
+}
+
+.donate-card .card-wrapper-text span {
+color: var(--sonic-silver);
+font-weight: var(--fw-500);
+}
+
+.card-wrapper-text data { font-weight: var(--fw-600); }
+
+.card-wrapper-text .green { color: var(--pistachio); }
+
+.card-wrapper-text .yellow { color: var(--bright-yellow-crayola); }
+
+.card-wrapper-text .cyan { color: var(--medium-turquoise); }
+
+
+
+
+
+/*-----------------------------------*\
+#TESTIMONIALS
+\*-----------------------------------*/
+
+.testi { background-color: var(--jet); }
+
+.testi-content { padding: var(--section-padding) 15px; }
+
+.testi .section-title {
+color: var(--white);
+margin-block: 10px 40px;
+}
+
+.testi-card { color: var(--white); }
+
+.testi-text,
+.testi-name { font-size: var(--fs-8); }
+
+.testi-text,
+.testi-title { font-family: var(--ff-inter); }
+
+.testi-text {
+padding-block-end: 30px;
+border-block-end: 1px solid var(--white_10);
+margin-block: 20px 30px;
+}
+
+.testi-title {
+color: var(--white_50);
+font-size: var(--fs-10);
+}
+
+.testi-banner { background-color: var(--light-gray); }
+
+
+
+
+
+/*-----------------------------------*\
+#PARTNER
+\*-----------------------------------*/
+
+.partner { background-color: var(--baby-powder); }
+
+.partner .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 50px;
+}
+
+.partner-logo .color,
+.partner-logo:is(:hover, :focus) .gray { display: none; }
+
+.partner-logo:is(:hover, :focus) .color,
+.partner-logo .gray { display: block; }
+
+
+
+
+
+/*-----------------------------------*\
+#EVENT
+\*-----------------------------------*/
+
+.event { padding-block-end: 120px; }
+
+.event .section-subtitle { justify-content: center; }
+
+.event .section-title {
+text-align: center;
+margin-block: 15px 50px;
+}
+
+.event-list {
+display: grid;
+gap: 30px;
+margin-block-end: 70px;
+}
+
+.event-card {
+border: 1px solid var(--platinum);
+padding: 40px 30px;
+border-radius: 2px;
+outline: 3px solid transparent;
+transition: var(--transition-2);
+}
+
+.event-card:is(:hover, :focus-within) { outline-color: var(--pistachio); }
+
+.event-card .card-time {
+background-color: var(--pistachio);
+color: var(--white);
+font-weight: var(--fw-600);
+line-height: 1.3;
+max-width: max-content;
+padding: 10px 20px;
+border-radius: 8px;
+box-shadow: 0 10px 15px var(--pistachio_50);
+}
+
+.event-card .card-time .month { font-size: 2.1rem; }
+
+.event-card .card-time .date { font-size: var(--fs-4); }
+
+.event-card .card-subtitle {
+margin-block: 30px 5px;
+color: var(--pistachio);
+font-size: var(--fs-8);
+font-weight: var(--fw-600);
+letter-spacing: -1px;
+}
+
+.event-card .card-title {
+color: var(--eerie-black-2);
+letter-spacing: -1px;
+}
+
+.event-card .card-text {
+font-family: var(--ff-inter);
+margin-block: 5px 30px;
+}
+
+.event .btn-secondary { margin-inline: auto; }
+
+
+
+
+
+/*-----------------------------------*\
+#INSTA POST
+\*-----------------------------------*/
+
+.insta-post-link {
+position: relative;
+background-color: var(--eerie-black-1);
+overflow: hidden;
+}
+
+.insta-post-link > img { transition: var(--transition-2); }
+
+.insta-post-link:is(:hover, :focus) > img {
+transform: scale(1.1);
+opacity: 0.5;
+}
+
+.insta-post-link > ion-icon {
+color: var(--white);
+font-size: 5rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: var(--transition-2);
+}
+
+.insta-post-link:is(:hover, :focus) > ion-icon { opacity: 1; }
+
+.insta-post-list {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: inline mandatory;
+}
+
+.insta-post-list::-webkit-scrollbar { display: none; }
+
+.insta-post-item {
+min-width: 90%;
+scroll-snap-align: center;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#FOOTER
+\*-----------------------------------*/
+
+/* .footer {
+background-color: var(--raisin-black);
+color: var(--white);
+font-family: var(--ff-inter);
+padding-block: 40px;
+}
+
+.footer .container {
+margin-inline: 15px;
+background-color: var(--eerie-black-3);
+padding: 20px;
+}
+
+.footer-list,
+.copyright {
+max-width: max-content;
+margin-inline: auto;
+}
+
+.footer-list {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 5px 40px;
+margin-block-end: 15px;
+}
+
+.footer-link,
+.copyright-link {
+text-decoration: underline;
+transition: var(--transition-1);
+}
+
+.footer-link {  color: var(--white_50); }
+
+:is(.footer-link, .copyright-link):is(:hover, :focus) { 
+background-color: hsla(0, 0%, 100%, 0.05);
+} */
+/* footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-us h3 {
+  color: #333;
+}
+
+.contact-us p {
+  margin: 5px 0;
+  color: #555;
+} */
+
+
+.copyright { text-align: center; }
+
+.copyright-link { display: inline-block; }
+
+
+
+
+
+/*-----------------------------------*\
+#MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+* responsive for larger than 450px screen
+*/
+
+@media (min-width: 450px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-3: 4rem;
+
+}
+
+
+
+/**
+ * CTA
+ */
+
+.cta { --fs-4: 4.1rem; }
+
+}
+
+
+
+
+
+/**
+* responsive for larger than 580px screen
+*/
+
+@media (min-width: 580px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-2: 5.5rem;
+
+}
+
+
+
+/**
+ * DONATE
+ */
+
+.donate-card {
+  position: relative;
+  padding-block-end: 150px;
+  box-shadow: none;
+}
+
+.donate-card .card-content {
+  position: absolute;
+  width: 85%;
+  bottom: 0;
+  right: 0;
+  border-radius: 4px;
+  box-shadow: var(--card-shadow);
+}
+
+.donate-card .card-title { --fs-5: 2.4rem; }
+
+
+
+/**
+ * EVENT
+ */
+
+.event-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.event-card .card-subtitle { margin-block-start: 0; }
+
+.event-card .card-title {
+  font-size: var(--fs-5);
+  line-height: 1.4;
+}
+
+
+
+/**
+ * INSTA POST
+ */
+
+.insta-post-item { min-width: 45%; }
+
+}
+
+
+
+
+
+/**
+* responsive for larger than 768px screen
+*/
+
+@media (min-width: 768px) {
+
+/**
+ * FEATURES, SERVICE
+ */
+
+.features-list,
+.service-list { grid-template-columns: 1fr 1fr; }
+
+
+
+/**
+ * ABOUT
+ */
+
+.banner-row {
+  display: flex;
+  gap: 20px;
+}
+
+.deco-title {
+  top: 10%;
+  left: calc(100% + 40px);
+}
+
+.about-img { margin-block-end: 0; }
+
+.about-img:first-child { margin-block-end: 30px; }
+
+
+
+/**
+ * TESTIMONIALS
+ */
+
+.testi-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.testi-text { margin-block-start: 0; }
+
+
+
+/**
+ * INSTA POST
+ */
+
+.insta-post-item { min-width: 32%; }
+
+
+
+/**
+ * FOOTER
+ */
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-inline: 40px;
+}
+
+.footer-list,
+.copyright { margin-inline: 0; }
+
+.footer-list { margin-block-end: 0; }
+
+}
+
+
+
+
+
+/**
+* responsive for larger than 992px screen
+*/
+
+@media (min-width: 992px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-2: 7.5rem;
+
+}
+
+
+
+/**
+ * HEADER
+ */
+
+.header { transition: var(--transition-2); }
+
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.search-btn {
+  color: var(--white);
+  font-size: 2.6rem;
+}
+
+.search-btn ion-icon { --ionicon-stroke-width: 50px; }
+
+
+
+/**
+ * HERO
+ */
+
+.hero {
+  background-image:url("{{url_for('static',filename='images/mining-hero.jpg')}}") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 780px;
+}
+
+
+
+/**
+ * FEATURES
+ */
+
+.features { padding-block-start: var(--section-padding); }
+
+.features-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+/**
+ * ABOUT
+ */
+
+.banner-col { width: 50%; }
+
+.about-img { max-width: 100%; }
+
+.about-img-2 {
+  min-width: 120%;
+  margin-inline-start: -20%;
+}
+
+.about-img-3 { max-width: 90%; }
+
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: flex-start;
+  gap: 120px;
+}
+
+.about-banner { margin-block-end: 0; }
+
+
+
+/**
+ * CTA
+ */
+
+.cta .container {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 30px;
+}
+
+.cta-content { margin-block-end: 0; }
+
+.cta .section-title { --fs-4: 5rem; }
+
+
+
+/**
+ * SERVICE
+ */
+
+.service-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+/**
+ * DONATE
+ */
+
+.donate-list {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+
+
+/**
+ * TESTIMONIALS
+ */
+
+.testi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testi-content { padding-inline: 30px 50px; }
+
+
+
+/**
+ * EVENT
+ */
+
+.event-card .wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-card .card-text { margin-block-end: 0; }
+
+
+
+/**
+ * INSTA POST
+ */
+
+.insta-post-item { min-width: 24%; }
+
+}
+
+
+
+
+
+/**
+* responsive for larger than 1200px screen
+*/
+
+@media (min-width: 1200px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-3: 4.4rem;
+
+}
+
+
+
+/**
+ * REUSED STYLE
+ */
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 30px;
+}
+
+.section-title { line-height: 1.2; }
+
+
+
+/**
+ * HEADER
+ */
+
+.nav-open-btn,
+.nav-close-btn,
+.navbar > .logo,
+.navbar-link > ion-icon { display: none; }
+
+.header { padding-block: 25px; }
+
+/* .lang-switch {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  font: inherit;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+} */
+/* 
+.lang-switch option { color: var(--eerie-black-1); } */
+
+.navbar {
+  all: unset;
+  margin-inline: auto;
+}
+
+.navbar-list {
+  all: unset;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-link {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  text-transform: capitalize;
+  transition: var(--transition-2);
+}
+
+.navbar-link:is(:hover, :focus) { background: none; }
+
+.navbar-list:hover .navbar-link:not(:hover) { color: var(--white-60); }
+
+
+
+/**
+ * HERO
+ */
+
+.hero {
+  padding-block: 200px 325px;
+  background-position: center;
+}
+
+
+
+/**
+ * FEATURES
+ */
+
+.features {
+  padding-block-start: 0;
+  margin-block-start: -185px;
+  background-color: transparent;
+}
+
+
+
+/**
+ * ABOUT
+ */
+
+.deco-img { left: -35px; }
+
+
+
+/**
+ * DONATE
+ */
+
+.donate-card { padding-inline-end: 250px; }
+
+.donate-card .card-content { width: 60%; }
+
+
+
+/**
+ * PARTNER
+ */
+
+.partner .container { justify-content: space-evenly; }
+
+
+
+/**
+ * INSTA POST
+ */
+
+.insta-post-item { min-width: 20%; }
+
+
+
+/**
+ * FOOTER
+ */
+
+
+
+}
+
+.footer {
+background-repeat: no-repeat;
+background-color: black;
+color: white;
+font-size: 15 px;
+}
+
+.footer-top {
+display: grid;
+gap: 50px;
+}
+
+.footer-brand-text {
+margin-block: 50px;
+}
+
+.footer-brand .wrapper {
+display: flex;
+gap: 5px;
+}
+
+.footer-brand .wrapper .span {
+font-weight: 10px;
+}
+
+.footer-link {
+transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+color: var(--kappel);
+}
+
+.footer-list-title {
+color: var(--white);
+font-family: var(--ff-league_spartan);
+font-size: var(--fs-3);
+font-weight: var(--fw-600);
+margin-block-end: 10px;
+}
+.footer.btn-has-before{
+margin-bottom: 2px;
+}
+
+.footer-list .footer-link {
+padding-block: 10px;
+}
+  </style>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Remine</a>
+      </h1>
+
+      <!-- <select name="language" class="lang-switch">
+
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="spanish">Spanish</option>
+
+      </select> -->
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">ReMine</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Facts</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#donate" class="navbar-link" data-nav-link>
+              <span>Products</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+      
+
+          <li>
+            <a href="#footer" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+        <button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href = "region"><button class = "btn btn-primary">
+          <span>Try Me!</span>
+
+        </button></a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="{{url_for('static',filename='images/subtitle-img-white.png')}}" width="32" height="7" alt="Wavy line">
+
+            <span>Welcome to ReMine</span>
+          </p>
+
+          <h2 class="h1 hero-title">
+           
+            Unlock with us <strong>Nature's Treasure</strong>
+          </h2>
+
+          <!-- <p class="hero-text">
+            Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            suspendisse
+            ultrices gravida.
+          </p> -->
+<!-- 
+          <button class="btn btn-primary">
+            <span>Donation</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button> -->
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+     
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <h2 class="deco-title">About Us</h2>
+
+            <img src="{{url_for('static',filename='images/deco-img.png')}}" width="58" height="261" alt="" class="deco-img">
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="{{url_for('static',filename='images/silver.jpeg')}}" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <img src="{{url_for('static',filename='images/silver.jpeg')}}" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+
+              <div class="banner-col">
+                <img src="{{url_for('static',filename='images/coal.jpg')}}" width="250" height="277" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+
+                <img src="{{url_for('static',filename='images/copper_malachite.jpg')}}" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+
+            <!-- <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+              <span>Why Choose Us</span>
+            </p> -->
+
+            <h2 class="h2 section-title">
+              Dive into  the journey of <strong>resource abundance</strong>
+            </h2>
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Our Mission</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Our Vision</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Next Plan</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <p class="section-text">
+                Join us in revolutionizing mining with forward-thinking technology and a commitment to sustainability.
+              </p>
+
+              <ul class="tab-list">
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Passionate Experts</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Sustainable Solutions</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Global Impact</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Cutting-Edge Technology</p>
+                </li>
+
+              </ul>
+
+              <button class="btn btn-secondary">
+                <span>Learn More Us</span>
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <div class="cta-content">
+            <h2 class="h2 section-title">Try us out!</h2>
+
+            <button class="btn btn-outline"><a href = "region">
+              <span>Access ReMine</span></a>
+
+              <!-- <ion-icon name="heart-outline" aria-hidden="true"></ion-icon> -->
+            </button>
+          </div>
+
+          <figure class="cta-banner">
+            <img src="{{url_for('static',filename='images/coal_mine.jpeg')}}" width="520" height="228" loading="lazy" alt="Fox"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image:url_for('static',filename='images/service-map.png') ">
+        <div class="container">
+
+          <p class="section-subtitle">
+            
+
+            <span>Fact time</span>
+          </p>
+
+          <h2 class="h2 section-title">
+            Let's explore some <strong> Mining Facts</strong>
+          </h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <!-- <div class="card-icon">
+                  <ion-icon name="tool-outline"></ion-icon>
+                </div> -->
+
+                <h3 class="h3 card-title">Gold Rush</h3>
+
+                <p class="card-text">
+                  California Gold Rush of 1848-1855 spurred one of the largest migrations
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+
+                <h3 class="h3 card-title">Deepest Mine</h3>
+
+                <p class="card-text">
+                  Mponeng gold mine in South Africa is over 4 kilometers (2.5 miles) deep
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+
+                <h3 class="h3 card-title">Cullinan Diamond</h3>
+
+                <p class="card-text">
+                  The largest diamond ever found weighed 3,106 carats (621 grams) 
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+              
+
+                <h3 class="h3 card-title">Space Mining</h3>
+
+                <p class="card-text">
+                  There's growing interest in mining asteroids for valuable resources like platinum
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DONATE
+      -->
+
+      <section class="section donate" id="donate">
+        <div class="container">
+
+          <ul class="donate-list">
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static',filename='images/mining-tool.jpeg')}}" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Cost</span>
+
+                      <data value="256">$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Efficiency of this tool</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="562">$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Buy Now</span>
+
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static',filename='images/tool2.jpeg')}}" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Cost</span>
+
+                      <data value="256">$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Efficiency of this tool</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="562">$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Buy Now</span>
+
+                   
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static',filename='images/tool3.jpeg')}}" width="520" height="325" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Cost</span>
+
+                      <data value="256">$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Efficiency of this tool</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="562">$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Buy Now</span>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="donate-card">
+
+                <figure class="card-banner">
+                  <img src="{{url_for('static',filename='images/tool4.jpeg')}}" width="120" height="125" loading="lazy" alt="Elephant"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="progress-wrapper">
+                    <p class="progress-text">
+                      <span>Cost</span>
+
+                      <data value="256">$256</data>
+                    </p>
+
+                    <data class="progress-value" value="83">83%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress"></div>
+                  </div>
+
+                  <h3 class="h3 card-title">Efficiency of this tool</h3>
+
+                  <div class="card-wrapper">
+
+                    <p class="card-wrapper-text">
+                      <span>Goal</span>
+
+                      <data class="green" value="34562">$34562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>Raise</span>
+
+                      <data class="yellow" value="562">$562</data>
+                    </p>
+
+                    <p class="card-wrapper-text">
+                      <span>To Go</span>
+
+                      <data class="cyan" value="864">$864</data>
+                    </p>
+
+                  </div>
+
+                  <button class="btn btn-secondary">
+                    <span>Buy Now</span>
+
+                  </button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+<!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id = "footer">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">
+            <img src="./assets/images/eduTome.png" width="162" height="50" alt="EduWeb logo">
+          </a> -->
+
+          <!-- <p class="footer-brand-text">
+            Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.
+          </p>
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">70-80 Upper St Norwich NR2</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@eduweb.com" class="footer-link">info@eduweb.com</a>
+          </div> -->
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructor Profile</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Purchase Guide</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">News & Articles</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <!-- <li>
+            <a href="login.html" class="footer-link">Sign In/Registration</a>
+          </li> -->
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn-has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <!-- <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul> -->
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+       
+
+      </div>
+    </div>
+
+  </footer>
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <!-- <section class="testi">
+
+        <div class="testi-content">
+
+      
+
+          <h2 class="h2 section-title">
+            <strong>Contact Us</strong>
+          </h2>
+
+        
+              <blockquote class="testi-text">
+                
+              </blockquote>
+
+              <h3 class="testi-name">David S. Neuman</h3>
+
+              <p class="testi-title">Business Manager</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <figure class="testi-banner">
+          <img src="./assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="Rhinoceros"
+            class="img-cover">
+        </figure>
+
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #PARTNER
+      -->
+
+      
+
+
+
+
+      
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <!-- <section class="insta-post">
+
+        <ul class="insta-post-list">
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/insta-1.jpg" width="320" height="300" loading="lazy" alt="Lion"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/insta-2.jpg" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/insta-3.jpg" width="320" height="300" loading="lazy" alt="Wild Bear"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/insta-4.jpg" width="320" height="300" loading="lazy" alt="Deer"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img src="./assets/images/insta-5.jpg" width="320" height="300" loading="lazy" alt="Horses"
+                class="img-cover">
+
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section> -->
+
+  
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+<!-- 
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="#" class="footer-link">Terms of use</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy & Policy</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        Copyright 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer> -->
+
+  <!-- Footer Section -->
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <!-- <script src="{{url_for('static',filename='js/script.js')}}"></script> -->
+  <script>
+    'use strict';
+
+
+
+/**
+ * navbar toggle
+ */
+
+const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+
+const navElemArr = [navOpenBtn, navCloseBtn];
+
+for (let i = 0; i < navElemArr.length; i++) {
+  navElemArr[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+  });
+}
+
+/**
+ * toggle navbar when click any navbar link
+ */
+
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    navbar.classList.remove("active");
+  });
+}
+
+
+
+
+
+/**
+ * header active when window scrolled down
+ */
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function () {
+  window.scrollY >= 50 ? header.classList.add("active")
+    : header.classList.remove("active");
+});
+  </script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

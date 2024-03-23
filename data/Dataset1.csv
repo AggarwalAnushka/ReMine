@@ -1,0 +1,201 @@
+States,Rock Type,Mineral,Latitude,Longitude,Elevation (m),Mining Method,Extraction Equipment,Drilling Depth (m),Temperature (°C),Past Extraction Results (tons),Resource Concentration (g/t),Mineral Hardness,Humidity,Cutting Speed,Power used (HP),Wear and tear rate
+Andaman and Nicobar Islands,Basalt,Zinc,11.7401,92.6586,290,Underground Mining,Drill,90,28,6200,6,Hard,High,High,800,High
+Andhra Pradesh,Limestone,Rhodium,15.9129,79.74,100,Underground Minig,Drill rig L,95,21,7800,9,Moderate,High,Moderate,1086,High
+Andhra Pradesh,Basalt,Zinc,15.9129,79.74,60,Solution Mining,Haul Truck,45,28,6100,6,Hard,High,Moderate,400,High
+Andhra Pradesh,Granite,Platinum,15.9129,79.74,50,Surface Mining,Drill,65,27,5700,6,Hard,High,High,400,High
+Arunachal Pradesh,Granite,Copper,27.1004,93.6167,700,Surface Mining,Extraction Equipment,50,29,5500,7,Hard,High,High,800,High
+Arunachal Pradesh,Basalt,Cobalt,27.1004,93.6167,700,Surface Mining,Extraction Equipment,50,30,6000,7,Hard,Moderate,Moderate,800,Low
+Arunachal Pradesh,Limestone,Rhodium,27.1004,93.6167,700,Underground Mining,Drill,85,29,6000,7,Hard,Moderate,Moderate,609,High
+Arunachal Pradesh,Granite,Nickel,27.1004,93.6167,700,Surface Mining,Excavator,40,27,5800,6,Hard,High,Moderate,609,Moderate
+Arunachal Pradesh,Limestone,Silver,27.1004,93.6167,700,Surface Mining,Drill,70,27,5700,6,Hard,High,Moderate,800,High
+Arunachal Pradesh,Limestone,Titanium,27.1004,93.6167,700,Surface Mining,Extraction Equipment,40,27,5800,6,Hard,High,Moderate,400,Low
+Assam,Sandstone,Cobalt,26.2006,92.9376,300,Solution Minig,Haul Truck,25,31,5600,6,Hard,Low,Low,400,Low
+Assam,Granite,Copper,26.2006,92.9376,50,Surface Mining,Excavator,33,27,5700,4,Hard,Low,Low,1086,Moderate
+Assam,Basalt,Zinc,26.2006,92.9376,50,Surface Mining,Excavator,40,29,6100,7,Very Hard,High,Low,1086,High
+Assam,Limestone,Titanium,26.2006,92.9376,1000,Surface Mining,Haul Truck,65,26,6000,8,Very Hard,Moderate,High,800,High
+Assam,Sandstone,Lead,26.2006,92.9376,1000,Surface Mining,Drill,55,28,5600,5,Moderate,Moderate,Low,400,High
+Assam,Basalt,Zinc,26.2006,92.9376,1000,Surface Mining,Excavator,55,29,5900,7,Hard,Low,High,1086,High
+Assam,Basalt,Uranium,26.2006,92.9376,1000,Surface Mining,Drill,55,28,5600,6,Hard,Low,High,400,Moderate
+Bihar,Sandstone,Copper,25.5941,85.1376,80,Solution Minig,Bulldozer,65,22,8900,11,Hard,Low,Low,609,Low
+Bihar,Shale,Titanium,25.6127,85.1585,85,Solution Minig,Bulldozer,70,21,9200,10,Hard,Low,Low,609,Low
+Bihar,Shale,Iron,51.5074,-0.1278,100,Surface Minig,Drill,70,15,12000,6,Soft,Moderate,High,800,Moderate
+Bihar,Shale,Manganese,25.5941,85.1376,80,Surface Minig,Drill,65,22,8900,11,Soft,Moderate,High,800,Moderate
+Bihar,Shale,Chromium,25.5325,85.0485,75,Surface Minig,Drill,60,20,8700,12,Soft,Moderate,High,800,Moderate
+Bihar,Granite,Gold,25.6127,85.1585,85,Surface Minig,Drill,70,21,9200,10,Soft,Moderate,High,800,Moderate
+Bihar,Basalt,Nickel,25.6127,85.1585,85,Surface Minig,Drill,70,21,9200,10,Soft,Moderate,High,800,Moderate
+Bihar,Limestone,Rhodium,25.5941,85.1376,80,Surface Minig,Drill,65,22,8900,11,Soft,Moderate,High,800,Moderate
+Bihar,Shale,Bauxite,25.6127,85.1585,85,Underground Minig,Excavator,70,21,9200,10,Moderate,High,Moderate,1086,High
+Bihar,Limestone,Silver,25.5325,85.0485,75,Underground Minig,Excavator,60,20,8700,12,Moderate,High,Moderate,1086,High
+Bihar,Granite,Platinum,25.5325,85.0485,75,Underground Minig,Excavator,60,20,8700,12,Moderate,High,Moderate,1086,High
+Bihar,Limestone,Zinc,25.0961,85.3131,30,Surface Mining,Drill,60,28,5600,6,Hard,Moderate,Moderate,800,Moderate
+Chhattisgarh,Granite,Rhodium,21.2787,81.8661,200,Surface Minig,Drill,45,27,6700,13,Soft,Moderate,High,800,Moderate
+Chhattisgarh,Sandstone,Zinc,21.2787,81.8661,320,Surface Mining,Haul Truck,55,29,6000,6,Moderate,Moderate,Moderate,400,Low
+Chhattisgarh,Shale,Titanium,21.2787,81.8661,330,Underground Mining,Drill,60,26,5900,5,Moderate,High,Moderate,800,High
+Chhattisgarh,Sandstone,Nickel,21.2787,81.8661,400,Underground Mining,Excavator,60,28,5700,5,Moderate,High,High,1086,High
+Chhattisgarh,Basalt,Palladium,21.2787,81.8661,400,Underground Mining,Drill,65,28,6000,6,Hard,Moderate,High,400,High
+Chhattisgarh,Limestone,Uranium,21.2787,81.8661,400,Underground Mining,Haul Truck,55,26,5700,5,Moderate,Moderate,High,800,High
+Daman and Diu,Granite,Lead,20.7141,70.9822,6,Surface Mining,Extraction Equipment,45,33,5400,5,Hard,Low,High,609,Low
+Delhi,Sandstone,Rhodium,22.9868,87.855,50,Surface Mining,Haul Truck,21,26,5700,8,Very Hard,High,High,609,Moderate
+Goa,Shale,Rhodium,15.2993,74.124,7,Surface Mining,Excavator,38,29,6000,5,Soft,Low,Moderate,1086,High
+Goa,Limestone,Lead,15.2993,74.124,10,Surface Mining,Excavator,40,28,6200,6,Hard,High,High,1086,High
+Goa,Limestone,Titanium,15.2993,74.124,5,Surface Mining,Excavator,35,28,5400,4,Moderate,High,High,1086,High
+Goa,Basalt,Zinc,15.2993,74.124,5,Surface Mining,Extraction Equipment,30,28,6200,6,Hard,High,High,609,High
+Goa,Shale,Gold,15.2993,74.124,5,Surface Mining,Drill,30,29,6100,8,Very Hard,High,High,400,Low
+Goa,Sandstone,Cobalt,15.2993,74.124,5,Surface Mining,Extraction Equipment,30,27,6000,7,Hard,Moderate,Moderate,1086,High
+Goa,Shale,Nickel,15.2993,74.124,5,Surface Mining,Extraction Equipment,30,28,5900,6,Hard,High,Low,400,Low
+Goa,Limestone,Gold,15.2993,74.124,5,Surface Mining,Extraction Equipment,30,28,6000,7,Hard,High,High,609,High
+Gujarat,Sandstone,Zinc,23.0225,72.5714,100,Solution Minig,Bulldozer,40,32,5500,5,Very Hard,Low,Low,609,Low
+Gujarat,Sandstone,Lead,22.2587,71.1924,100,Underground Mining,Drill,65,30,5600,5,Moderate,High,Low,400,Low
+Gujarat,Sandstone,Chromium,22.2587,71.1924,200,Surface Mining,Extraction Equipment,35,27,5700,6,Hard,Moderate,Moderate,400,Low
+Haryana,Shale,Cobalt,29.0588,76.0856,50,Surface Minig,Drill,65,26,10500,16,Soft,Moderate,High,800,Moderate
+Haryana,Limestone,Titanium,29.0588,76.0856,215,Underground Mining,Drill,70,28,5500,8,Hard,High,High,800,High
+Haryana,Sandstone,Rhodium,29.0588,76.0856,220,Underground Mining,Drill,70,27,5800,4,Moderate,Moderate,Moderate,800,Low
+Haryana,Sandstone,Zinc,29.0588,76.0856,180,Underground Mining,Extraction Equipment,65,27,5600,5,Hard,Moderate,Moderate,609,Low
+Haryana,Granite,Copper,29.0588,76.0856,200,Underground Mining,Drill,75,30,5400,5,Soft,Low,High,800,Low
+Haryana,Basalt,Silver,29.0588,76.0856,200,Underground Mining,Extraction Equipment,65,30,5900,7,Hard,Low,High,800,High
+Haryana,Limestone,Lead,29.0588,76.0856,200,Underground Mining,Haul Truck,48,25,5600,7,Hard,High,High,609,Moderate
+Himachal Pradesh,Basalt,Lead,31.1048,77.1734,100,Underground Minig,Excavator,60,20,6900,12,Moderate,High,Moderate,1086,High
+Himachal Pradesh,Sandstone,Zinc,31.1048,77.1734,1500,Underground Mining,Drill,75,26,5800,7,Hard,Low,Low,800,High
+Himachal Pradesh,Sandstone,Titanium,31.1048,77.1734,1800,Solution Mining,Excavator,25,28,5900,5,Moderate,High,High,609,High
+Himachal Pradesh,Granite,Cobalt,31.1048,77.1734,1800,Solution Mining,Excavator,70,27,5600,7,Hard,Moderate,Moderate,800,Moderate
+Himachal Pradesh,Sandstone,Palladium,31.1048,77.1734,1800,Solution Mining,Excavator,65,30,5900,6,Hard,High,High,400,High
+Himachal Pradesh,Shale,Gold,31.1048,77.1734,1800,Surface Mining,Extraction Equipment,35,25,5600,7,Hard,Low,Moderate,400,High
+Jammu and Kashmir,Basalt,Zinc,33.7782,76.5762,1600,Solution Mining,Haul Truck,45,27,6100,7,Very Hard,Low,Low,400,Moderate
+Jammu and Kashmir,Basalt,Copper,33.7782,76.5762,1800,Solution Mining,Drill,85,27,6000,6,Hard,Low,Low,800,Moderate
+Jammu and Kashmir,Limestone,Platinum,33.7782,76.5762,1800,Solution Mining,Haul Truck,35,25,5600,6,Hard,Low,Low,609,High
+Jammu and Kashmir,Granite,Gold,34.0837,76.797,2100,Surface Mining,Excavator,35,26,5700,7,Hard,High,Moderate,800,Moderate
+Jammu and Kashmir,Limestone,Titanium,34.0837,76.797,2100,Surface Mining,Excavator,35,28,5700,6,Hard,High,High,1086,High
+Jharkhand,Limestone,Uranium,23.6102,85.2799,150,Underground Minig,Excavator,100,23,9300,14,Moderate,High,Moderate,1086,High
+Jharkhand,Basalt,Lead,23.6102,85.2799,210,Underground Mining,Drill,80,30,5300,7,Very Hard,High,High,800,High
+Jharkhand,Sandstone,Rhodium,23.6102,85.2799,400,Underground Mining,Drill,80,32,5800,6,Hard,Low,Moderate,800,Moderate
+Jharkhand,Sandstone,Titanium,23.6102,85.2799,400,Underground Mining,Drill,70,29,6100,8,Hard,Low,Low,400,Low
+Jharkhand,Shale,Gold,23.6102,85.2799,210,Surface Mining,Drill,60,28,5800,7,Hard,Moderate,High,400,Moderate
+Karnataka,Sandstone,Copper,35.6895,139.6917,150,Solution Minig,Bulldozer,80,18,6000,8,Very Hard,Low,Low,609,Low
+Karnataka,Granite,Gold,35.6895,139.6917,150,Surface Minig,Haul Truck,80,18,6000,8,Soft,Low,High,400,Low
+Karnataka,Shale,Iron,35.6895,139.6917,150,Surface Minig,Haul Truck,80,18,6000,8,Soft,Moderate,High,400,Moderate
+Karnataka,Karnataka,Nickel,35.6895,139.6917,150,Underground Minig,Excavator,80,18,6000,8,Moderate,Moderate,Moderate,1086,High
+Karnataka,Limestone,Silver,35.6895,139.6917,150,Underground Minig,Excavator,80,18,6000,8,Moderate,High,Moderate,1086,High
+Karnataka,Limestone,Titanium,15.3173,75.7139,300,Solution Mining,Haul Truck,75,27,6200,6,Hard,High,Moderate,400,Moderate
+Karnataka,Limestone,Palladium,15.3173,75.7139,300,Surface Mining,Extraction Equipment,40,27,5700,7,Hard,High,High,609,High
+Kerala,Limestone,Rhodium,10.8505,76.2711,500,Underground Mining,Drill,75,26,5900,5,Soft,High,High,800,High
+Kerala,Shale,Copper,10.8505,76.2711,1500,Surface Mining,Extraction Equipment,30,29,5700,8,Very Hard,Low,High,609,High
+Kerala,Shale,Lead,10.8505,76.2711,1000,Surface Mining,Haul Truck,50,26,5900,7,Very Hard,Low,Low,400,High
+Kerala,Granite,Titanium,10.8505,76.2711,2000,Surface Mining,Excavator,40,27,5700,7,Moderate,High,Moderate,1086,High
+Kerala,Granite,Platinum,10.8505,76.2711,2000,Surface Mining,Excavator,40,28,5700,6,Hard,Moderate,Moderate,1086,Moderate
+Kerala,Granite,Gold,10.8505,76.2711,2000,Surface Mining,Haul Truck,45,28,5800,7,Hard,Moderate,High,400,Moderate
+Kerala,Shale,Uranium,10.8505,76.2711,2000,Surface Mining,Haul Truck,51,28,5800,6,Hard,Moderate,High,800,Moderate
+Kerala,Limestone,Silver,10.8505,76.2711,2000,Surface Mining,Haul Truck,56,28,5800,7,Hard,Moderate,High,800,High
+Lakshadweep,Limestone,Titanium,10.328,72.7847,2,Solution Mining,Haul Truck,35,29,5600,7,Very Hard,High,Low,400,Moderate
+Madhya Pradesh,Basalt,Uranium,23.2599,77.4126,300,Underground Minig,Excavator,85,17,6200,6,Moderate,Moderate,Moderate,1086,High
+Madhya Pradesh,Sandstone,Rhodium,23.4733,77.9474,350,Surface Mining,Haul Truck,25,30,5800,5,Soft,High,Moderate,400,Moderate
+Madhya Pradesh,Basalt,Lead,23.4733,77.9474,400,Underground Mining,Drill,85,28,5500,4,Very Hard,Low,Low,800,Moderate
+Madhya Pradesh,Granite,Zinc,23.4733,77.9474,900,Solution Mining,Haul Truck,60,29,5400,6,Hard,Moderate,Moderate,609,Moderate
+Madhya Pradesh,Shale,Palladium,23.4733,77.9474,400,Surface Mining,Drill,55,27,5700,7,Hard,High,Moderate,400,High
+Maharashtra,Sandstone,Copper,19.7515,75.7139,560,Solution Minig,Bulldozer,95,22,5500,6,Very Hard,Low,Low,609,Low
+Maharashtra,Granite,Gold,19.7515,75.7139,560,Surface Minig,Haul Truck,95,22,5500,6,Hard,Low,High,400,Low
+Maharashtra,Shale,Iron,19.7515,75.7139,560,Surface Minig,Haul Truck,95,22,5500,6,Hard,Low,High,400,Low
+Maharashtra,Limestone,Silver,40.7128,-74.006,50,Underground Minig,Excavator,100,20,8000,10,Moderate,Moderate,Moderate,1086,Moderate
+Maharashtra,Basalt,Nickel,19.7515,75.7139,560,Underground Minig,Excavator,95,22,5500,6,Moderate,Moderate,Moderate,1086,High
+Maharashtra,Basalt,Zinc,19.7515,75.7139,300,Underground Mining,Drill,75,26,6000,8,Moderate,Low,High,800,Low
+Maharashtra,Shale,Rhodium,19.7515,75.7139,300,Underground Mining,Drill,70,26,5600,8,Very Hard,Moderate,High,400,Low
+Maharashtra,Granite,Cobalt,19.7515,75.7139,300,Surface Mining,Drill,70,26,5600,8,Very Hard,High,High,1086,Low
+Manipur,Shale,Platinum,24.6637,93.9063,50,Surface Minig,Haul Truck,75,16,9500,14,Hard,Low,High,400,Low
+Manipur,Granite,Lead,24.6637,93.9063,790,Surface Mining,Extraction Equipment,35,30,5800,8,Hard,Moderate,High,609,High
+Manipur,Shale,Palladium,24.6637,93.9063,1500,Underground Mining,Haul Truck,25,26,5600,7,Hard,Moderate,High,609,High
+Manipur,Limestone,Uranium,24.6637,93.9063,1500,Surface Mining,Excavator,50,25,5800,8,Very Hard,High,Moderate,400,High
+Manipur,Sandstone,Rhodium,24.6637,93.9063,1500,Underground Mining,Extraction Equipment,52,26,5600,7,Hard,Moderate,High,1086,Moderate
+Meghalaya,Shale,Rhodium,25.467,91.3662,200,Surface Mining,Extraction Equipment,45,30,5800,5,Soft,High,Low,609,High
+Meghalaya,Limestone,Coal,25.467,91.3662,500,Surface Mining,Drill,70,27,5700,5,Moderate,High,Low,400,Low
+Meghalaya,Granite,Uranium,25.467,91.3662,500,Surface Mining,Excavator,40,30,5900,7,Hard,Low,High,800,Moderate
+Meghalaya,Basalt,Silver,25.467,91.3662,500,Surface Mining,Excavator,50,29,5900,6,Hard,Low,High,800,Moderate
+Meghalaya,Limestone,Cobalt,25.467,91.3662,500,Surface Mining,Excavator,40,29,5900,5,Moderate,High,High,800,Low
+Mizoram,Sandstone,Copper,23.1645,92.9376,1800,Underground Mining,Drill,80,31,5500,4,Moderate,High,Low,800,Moderate
+Mizoram,Sandstone,Uranium,23.1645,92.9376,2000,Solution Mining,Excavator,45,30,5900,6,Hard,High,Moderate,1086,Moderate
+Mizoram,Limestone,Silver,23.1645,92.9376,2000,Underground Mining,Extraction Equipment,50,29,5900,8,Very Hard,High,Moderate,1086,Low
+Mizoram,Basalt,Platinum,23.1645,92.9376,2000,Surface Mining,Haul Truck,30,29,5900,7,Hard,Moderate,High,800,High
+Mizoram,Sandstone,Cobalt,23.1645,92.9376,2000,Surface Mining,Haul Truck,65,29,5900,6,Hard,Moderate,High,609,Low
+Nagaland,Basalt,Uranium,26.1584,94.5624,100,Underground Minig,Drill,85,17,6300,13,Moderate,Moderate,High,800,Moderate
+Nagaland,Basalt,Zinc,26.1584,94.5624,800,Underground Mining,Drill,75,26,5900,7,Very Hard,Low,Low,800,High
+Nagaland,Basalt,Titanium,26.1584,94.5624,1200,Solution Mining,Haul Truck,70,28,5500,6,Hard,High,Moderate,400,Moderate
+Nagaland,Basalt,Rhodium,26.1584,94.5624,1000,Underground Mining,Drill,70,30,5700,6,Hard,High,High,,
+Nagaland,Sandstone,Lead,26.1584,94.5624,800,Underground Mining,Drill,85,27,5800,5,Hard,High,Low,400,Low
+Nagaland,Limestone,Copper,26.1584,94.5624,800,Underground Mining,Drill,85,25,5600,6,Hard,High,Low,400,Low
+Nagaland,Sandstone,Gold,26.1584,94.5624,800,Surface Mining,Drill,85,26,5900,6,Hard,Moderate,High,400,High
+Nagaland,Shale,Palladium,26.1584,94.5624,800,Surface Mining,Extraction Equipment,35,28,5800,7,Hard,Moderate,Moderate,400,High
+Nagaland,Shale,Nickel,26.1584,94.5624,800,Surface Mining,Excavator,50,26,5900,6,Hard,Moderate,High,1086,Low
+Odisha,Granite,Lead,20.9517,85.0985,560,Underground Mining,Drill,90,28,5300,6,Very Hard,Moderate,High,800,Moderate
+Odisha,Basalt,Silver,20.9517,85.0985,600,Solution Mining,Haul Truck,20,27,5700,5,Hard,High,Low,609,High
+Odisha,Limestone,Cobalt,20.9517,85.0985,600,Solution Mining,Drill,20,27,5700,5,Hard,High,Low,609,High
+Odisha,Sandstone,Uranium,20.9517,85.0985,600,Surface Mining,Drill,65,27,5700,6,Hard,High,High,609,High
+Odisha,Shale,Titanium,20.9517,85.0985,600,Solution Mining,Drill,12,27,5700,5,Moderate,High,Low,609,Moderate
+Punjab,Granite,Platinum,28.6139,77.209,200,Surface Minig,Haul Truck,60,22,7000,3,Hard,Low,Low,400,Low
+Punjab,Basalt,Vanadium,31.1471,75.3412,100,Underground Minig,Drill,75,16,6400,11,Soft,Moderate,High,800,Moderate
+Punjab,Sandstone,Lead,31.1471,75.3412,260,Underground Mining,Drill,70,25,5400,7,Hard,Low,Low,800,Moderate
+Punjab,Sandstone,Copper,31.1471,75.3412,250,Surface Mining,Haul Truck,75,28,5600,5,Moderate,Moderate,Moderate,400,Low
+Punjab,Basalt,Titanium,31.1471,75.3412,200,Solution Mining,Excavator,65,27,6100,8,Very Hard,Low,Low,609,Low
+Punjab,Granite,Rhodium,31.1471,75.3412,300,Surface Mining,Drill,80,27,5800,6,Hard,High,Moderate,800,Moderate
+Punjab,Sandstone,Zinc,31.1471,75.3412,300,Surface Mining,Haul Truck,45,28,5900,6,Hard,Moderate,High,400,Low
+Punjab,Limestone,Cobalt,31.1471,75.3412,300,Surface Mining,Haul Truck,57,29,5800,6,Hard,Moderate,Moderate,800,Moderate
+Rajasthan,Basalt,Copper,26.9124,75.7873,700,Surface Mining,Extraction Equipment,35,26,6000,7,Hard,High,High,1086,High
+Rajasthan,Shale,Rhodium,26.9124,75.7873,700,Surface Mining,Extraction Equipment,35,26,6000,7,Hard,High,High,1086,High
+Rajasthan,Limestone,Uranium,26.9124,75.7873,700,Surface Mining,Haul Truck,55,27,5900,5,Moderate,Moderate,Low,400,High
+Rajasthan,Granite,Cobalt,26.9124,75.7873,700,Surface Mining,Excavator,40,29,5900,6,Hard,High,High,1086,Moderate
+Rajasthan,Basalt,Platinum,26.9124,75.7873,700,Surface Mining,Haul Truck,74,27,5900,5,Moderate,High,High,400,Low
+Rajasthan,Granite,Zinc,26.9124,75.7873,700,Surface Mining,Haul Truck,22,27,5900,5,Moderate,High,High,400,Low
+Sikkim,Shale,Copper,27.533,88.5122,1200,Surface Mining,Excavator,50,25,5400,5,Moderate,Moderate,Moderate,1086,Low
+Sikkim,Granite,Platinum,27.533,88.5122,1000,Surface Mining,Extraction Equipment,30,29,5800,8,Very Hard,High,Moderate,400,Moderate
+Sikkim,Shale,Nickel,27.533,88.5122,1000,Surface Mining,Drill,70,28,5800,6,Hard,High,High,609,High
+Sikkim,Granite,Zinc,27.533,88.5122,1000,Surface Mining,Haul Truck,15,29,5700,6,Hard,High,High,609,High
+Sikkim,Sandstone,Silver,27.533,88.5122,1000,Surface Mining,Haul Truck,13,29,5800,7,Hard,High,High,609,Moderate
+Tamil Nadu,Limestone,Titanium,13.0827,80.2707,50,Underground Minig,Drill,90,28,8500,12,Soft,Moderate,High,800,Moderate
+Tamil Nadu,Granite,Lead,11.1271,78.6569,100,Surface Mining,Extraction Equipment,50,33,5400,7,Very Hard,High,High,609,Low
+Tamil Nadu,Basalt,Zinc,11.1271,78.6569,400,Underground Mining,Haul Truck,44,26,5600,8,Very Hard,Moderate,High,609,High
+Telangana,Granite,Palladium,17.385,78.4867,200,Surface Minig,Haul Truck,55,24,7200,7,Hard,Low,Low,400,Low
+Telangana,Shale,Titanium,18.1124,79.0193,280,Surface Mining,Extraction Equipment,42,31,5500,6,Moderate,Moderate,Moderate,609,Low
+Telangana,Granite,Rhodium,18.1124,79.0193,600,Solution Mining,Extraction Equipment,25,29,5400,5,Hard,Moderate,High,609,High
+Telangana,Granite,Lead,18.1124,79.0193,500,Surface Mining,Excavator,45,31,5400,7,Hard,Moderate,High,1086,High
+Telangana,Shale,Zinc,18.1124,79.0193,600,Solution Mining,Excavator,20,28,5700,6,Hard,Low,Moderate,609,High
+Telangana,Sandstone,Chromium,18.1124,79.0193,600,Surface Mining,Extraction Equipment,35,27,5800,6,Hard,Moderate,Moderate,400,Low
+Telangana,Basalt,Gold,18.1124,79.0193,600,Surface Mining,Haul Truck,34,30,6000,7,Hard,Moderate,High,609,High
+Tripura,Limestone,Palladium,23.9408,91.9882,100,Underground Minig,Drill,90,21,8400,15,Soft,Moderate,High,800,Moderate
+Tripura,Limestone,Titanium,23.9408,91.9882,25,Solution Mining,Haul Truck,55,27,6100,6,Hard,High,Moderate,400,Low
+Tripura,Shale,Copper,23.9408,91.9882,10,Surface Mining,Haul Truck,55,29,5900,5,Moderate,High,High,400,High
+Tripura,Basalt,Chromium,23.9408,91.9882,100,Underground Mining,Haul Truck,40,28,6000,6,Hard,Low,High,800,High
+Tripura,Sandstone,Gold,23.9408,91.9882,100,Surface Mining,Drill,45,28,5600,6,Hard,Low,High,400,Moderate
+Tripura,Basalt,Nickel,23.9408,91.9882,100,Underground Mining,Haul Truck,33,27,5900,6,Hard,Low,Moderate,609,High
+Uttar Pradesh,Basalt,Zinc,27.1303,80.8597,120,Underground Mining,Drill,85,28,5900,6,Hard,Moderate,Moderate,800,High
+Uttar Pradesh,Granite,Rhodium,26.8467,80.9462,400,Underground Mining,Drill,80,27,5800,6,Hard,Low,Low,400,Low
+Uttar Pradesh,Basalt,Lead,26.8467,80.9462,400,Underground Mining,Drill,80,27,5800,6,Hard,Low,Low,400,Low
+Uttar Pradesh,Shale,Palladium,26.8467,80.9462,400,Underground Mining,Drill,80,26,5800,6,Hard,High,High,609,High
+Uttar Pradesh,Granite,Silver,26.8467,80.9462,98,Surface Mining,Drill,60,29,5900,6,Hard,High,Moderate,400,Low
+Uttar Pradesh,Shale,Gold,26.8467,91.9882,98,Surface Mining,Drill,60,29,5900,6,Hard,High,Moderate,400,Low
+Uttar Pradesh,Granite,Copper,27.1303,80.9462,98,Surface Mining,Drill,60,29,5900,6,Hard,High,Moderate,400,Low
+Uttar Pradesh,Shale,Chromium,26.8467,80.9462,400,Underground Mining,Drill,60,29,5900,6,Hard,High,Moderate,400,Low
+Uttar Pradesh,Granite,Aluminium,23.9408,91.9882,400,Underground Mining,Drill,60,29,5900,6,Hard,High,Moderate,400,Low
+Uttarakhand,Shale,Platinum,30.0668,79.0193,50,Surface Minig,Haul Truck,80,18,8800,9,Hard,Low,Low,400,Low
+Uttarakhand,Shale,Rhodium,30.0668,79.0193,300,Surface Mining,Excavator,40,32,5900,5,Soft,Low,Low,1086,Moderate
+Uttarakhand,Granite,Copper,30.0668,79.0193,2100,Surface Mining,Haul Truck,35,25,5600,6,Hard,Low,Low,400,Moderate
+Uttarakhand,Limestone,Lead,30.0668,79.0193,1800,Surface Mining,Excavator,45,26,5600,5,Hard,Moderate,Moderate,1086,Moderate
+Uttarakhand,Basalt,Zinc,30.2095,78.7746,700,Solution Mining,Haul Truck,20,25,5500,6,Hard,Low,High,609,Moderate
+Uttarakhand,Sandstone,Gold,30.0668,79.0193,800,Solution Mining,Drill,55,28,5700,5,Moderate,Moderate,Low,400,Low
+Uttarakhand,Shale,Palladium,30.2095,78.7746,700,Solution Mining,Drill,23,26,5700,8,Very Hard,Low,High,609,High
+Uttarakhand,Basalt,Nickel,30.0668,79.0193,800,Surface Mining,Drill,55,28,5700,6,Hard,High,Moderate,400,Moderate
+Uttarakhand,Limestone,Chromium,30.0668,79.0193,800,Surface Mining,Excavator,25,27,5800,7,Hard,Moderate,High,1086,High
+Uttarakhand,Shale,Titanium,30.0668,79.0193,800,Underground Mining,Haul Truck,62,26,5600,8,Very Hard,Low,High,609,High
+Uttarakhand,Granite,Silver,30.0668,79.0193,800,Surface Mining,Drill,65,27,5700,6,Hard,Moderate,High,400,High
+Uttarakhand,Basalt,Uranium,30.0668,79.0193,800,Surface Mining,Haul Truck,32,28,5800,7,Hard,High,Moderate,609,Moderate
+Uttarakhand,Limestone,Cobalt,30.0668,79.0193,800,Surface Mining,Excavator,45,29,5900,5,Moderate,Low,High,1086,High
+Uttarakhand,Shale,Iron,30.0668,79.0193,800,Underground Mining,Drill,60,28,5800,7,Hard,Moderate,High,400,Moderate
+Uttarakhand,Shale,Zirconium,30.0668,79.0193,800,Underground Mining,Drill,60,28,5800,7,Hard,Moderate,High,400,Moderate
+Uttarakhand,Limestone,Aluminium,22.9868,79.0193,150,Surface Mining,Haul Truck,75,21,11000,6,Hard,Moderate,High,400,Moderate
+West Bengal,Shale,Aluminium,22.9868,79.0193,150,Surface Mining,Haul Truck,75,21,11000,6,Hard,Moderate,High,400,Moderate
+West Bengal,Shale,Chromium,22.9868,87.855,150,Surface Minig,Haul Truck,75,19,11000,7,Hard,Low,Low,400,Low
+West Bengal,Limestone,Copper,22.9868,87.855,60,Surface Mining,Excavator,38,29,5600,5,Hard,Moderate,High,1086,High
+West Bengal,Sandstone,Gold,22.9868,87.855,50,Surface Mining,Excavator,40,26,5400,7,Hard,Low,Moderate,1086,High
+West Bengal,Basalt,Silver,22.9868,87.855,50,Surface Mining,Extraction Equipment,40,28,6000,7,Hard,Low,High,800,Low
+West Bengal,Basalt,Platinum,22.9868,87.855,50,Surface Mining,Haul Truck,67,30,6000,8,Very Hard,High,High,609,High
+West Bengal,Shale,Palladium,22.9868,87.855,50,Underground Mining,Haul Truck,33,28,5800,7,Hard,Moderate,High,609,High
+West Bengal,Granite,Nickel,22.9868,87.855,50,Surface Mining,Excavator,55,29,5900,6,Hard,High,Moderate,400,Low
+West Bengal,Basalt,Uranium,22.9868,87.855,50,Surface Mining,Drill,60,30,6000,7,Hard,High,High,609,High
+West Bengal,Limestone,Titanium,22.9868,87.855,50,Surface Mining,Haul Truck,22,27,5700,6,Hard,Low,Moderate,609,High
+West Bengal,Sandstone,Rhodium,22.9868,87.855,50,Surface Mining,Haul Truck,21,26,5700,8,Very Hard,High,High,609,Moderate

@@ -1,0 +1,89 @@
+Mining Technique,Mineral Type,Mineral Hardness,Temperature,Humidity,Equipment Type,Cutting speed,feed rate,Wear and Tear Rate
+Surface Mining,Coal,Soft,High,Low,Excavator,High,Low,Moderate
+Underground Mining,Gold,Hard,Low,High,Drill,Moderate,High,High
+Solution Mining,Salt,Moderate,Moderate,Moderate,Haul Truck,Low,Moderate,Low
+Surface Mining,Iron Ore,Hard,Moderate,Moderate,Bulldozer,High,Moderate,High
+Underground Mining,Copper,Hard,Low,Low,Drill,Moderate,Moderate,Moderate
+Surface Mining,Limestone,Soft,High,High,Excavator,High,High,Low
+Underground Mining,Silver,Hard,Low,High,Drill,High,High,High
+Surface Mining,Bauxite,Moderate,Moderate,Low,Haul Truck,Moderate,Low,Moderate
+Solution Mining,Potash,Hard,High,Low,Excavator,High,Moderate,Low
+Surface Mining,Phosphate,Moderate,High,High,Bulldozer,High,High,High
+Underground Mining,Zinc,Hard,Low,Moderate,Drill,High,Moderate,Moderate
+Surface Mining,Gypsum,Soft,Moderate,Low,Haul Truck,Low,Moderate,Low
+Underground Mining,Lead,Hard,High,High,Excavator,Moderate,High,High
+Solution Mining,Uranium,Hard,Low,Low,Drill,High,High,Low
+Surface Mining,Nickel,Hard,Moderate,High,Bulldozer,High,High,Moderate
+Underground Mining,Titanium,Hard,High,Low,Drill,High,High,High
+Surface Mining,Zinc,Hard,High,Low,Haul Truck,High,High,Moderate
+Solution Mining,Diamond,Very Hard,Low,Low,Excavator,Very High,Low,Low
+Surface Mining,Coal,Soft,Moderate,Moderate,Bulldozer,High,High,High
+Underground Mining,Gold,Hard,High,High,Drill,High,High,High
+Surface Mining,Iron Ore,Hard,Low,Low,Excavator,High,High,High
+Underground Mining,Copper,Hard,Moderate,High,Drill,Moderate,High,Moderate
+Surface Mining,Limestone,Soft,High,High,Haul Truck,High,High,Low
+Underground Mining,Silver,Hard,Moderate,Low,Drill,High,High,High
+Surface Mining,Bauxite,Moderate,Low,Moderate,Excavator,Moderate,High,Moderate
+Solution Mining,Potash,Hard,High,Low,Bulldozer,High,Moderate,Low
+Surface Mining,Phosphate,Moderate,Moderate,High,Haul Truck,High,High,High
+Underground Mining,Zinc,Hard,Low,Low,Drill,High,High,Moderate
+Surface Mining,Gypsum,Soft,High,High,Excavator,Moderate,High,Low
+Underground Mining,Lead,Hard,Moderate,Moderate,Drill,High,High,High
+Solution Mining,Uranium,Hard,Low,Low,Haul Truck,High,High,Low
+Surface Mining,Nickel,Hard,High,Low,Bulldozer,High,High,Moderate
+Underground Mining,Titanium,Hard,Moderate,High,Drill,High,High,High
+Surface Mining,Zinc,Hard,Low,Low,Excavator,High,High,Moderate
+Solution Mining,Diamond,Very Hard,High,High,Haul Truck,Very High,Low,Low
+Surface Mining,Coal,Soft,Moderate,Low,Bulldozer,High,High,High
+Underground Mining,Gold,Hard,High,High,Drill,High,High,High
+Surface Mining,Iron Ore,Hard,Low,Low,Excavator,High,High,High
+Underground Mining,Copper,Hard,Moderate,High,Drill,Moderate,High,Moderate
+Surface Mining,Limestone,Soft,High,High,Haul Truck,High,High,Low
+Underground Mining,Silver,Hard,Moderate,Low,Drill,High,High,High
+Surface Mining,Bauxite,Moderate,Low,Moderate,Excavator,Moderate,High,Moderate
+Solution Mining,Potash,Hard,High,Low,Bulldozer,High,Moderate,Low
+Surface Mining,Coal,Soft,Moderate,Low,Bulldozer,High,High,High
+Underground Mining,Gold,Hard,High,High,Drill,High,High,High
+Solution Mining,Iron,Hard,Low,Moderate,Excavator,High,High,Low
+Surface Mining,Silver,Hard,High,Low,Haul Truck,High,High,Moderate
+Underground Mining,Copper,Hard,Moderate,High,Drill,Moderate,High,Moderate
+Surface Mining,Limestone,Soft,High,High,Bulldozer,High,High,Low
+Underground Mining,Zinc,Hard,Low,Low,Drill,High,High,Moderate
+Solution Mining,Potash,Hard,High,Low,Excavator,High,High,Low
+Surface Mining,Phosphate,Moderate,Moderate,High,Haul Truck,High,High,High
+Underground Mining,Nickel,Hard,High,Low,Drill,High,High,Moderate
+Surface Mining,Titanium,Hard,Low,Moderate,Excavator,High,High,High
+Underground Mining,Lead,Hard,Moderate,Moderate,Drill,High,High,High
+Solution Mining,Uranium,Hard,Low,Low,Haul Truck,High,High,Low
+Surface Mining,Zinc,Hard,High,Low,Bulldozer,High,High,Moderate
+Underground Mining,Diamond,Very Hard,Moderate,High,Drill,High,High,High
+Surface Mining,Coal,Soft,High,High,Excavator,High,High,High
+Underground Mining,Gold,Hard,Low,Low,Drill,High,High,High
+Solution Mining,Iron,Hard,Moderate,High,Excavator,High,High,Low
+Surface Mining,Silver,Hard,High,Low,Haul Truck,High,High,Moderate
+Underground Mining,Copper,Hard,Low,Moderate,Drill,Moderate,High,Moderate
+Surface Mining,Limestone,Soft,Moderate,High,Bulldozer,High,High,Low
+Underground Mining,Zinc,Hard,High,Low,Drill,High,High,Moderate
+Solution Mining,Potash,Hard,Low,Moderate,Excavator,High,High,Low
+Surface Mining,Phosphate,Moderate,High,High,Haul Truck,High,High,High
+Underground Mining,Nickel,Hard,Moderate,Low,Drill,High,High,Moderate
+Surface Mining,Titanium,Hard,High,High,Excavator,High,High,High
+Underground Mining,Lead,Hard,Low,Low,Drill,High,High,High
+Solution Mining,Uranium,Hard,Moderate,Moderate,Haul Truck,High,High,Low
+Surface Mining,Zinc,Hard,Low,High,Bulldozer,High,High,Moderate
+Underground Mining,Diamond,Very Hard,High,Low,Drill,High,High,High
+Surface Mining,Coal,Soft,Moderate,Moderate,Excavator,High,High,High
+Underground Mining,Gold,Hard,High,High,Drill,High,High,High
+Solution Mining,Iron,Hard,Low,Low,Excavator,High,High,Low
+Surface Mining,Silver,Hard,Moderate,High,Haul Truck,High,High,Moderate
+Underground Mining,Copper,Hard,High,Low,Drill,Moderate,High,Moderate
+Surface Mining,Limestone,Soft,Low,Moderate,Bulldozer,High,High,Low
+Underground Mining,Zinc,Hard,High,High,Drill,High,High,Moderate
+Solution Mining,Potash,Hard,Moderate,Low,Excavator,High,High,Low
+Surface Mining,Phosphate,Moderate,High,High,Haul Truck,High,High,High
+Underground Mining,Nickel,Hard,Low,Low,Drill,High,High,Moderate
+Surface Mining,Titanium,Hard,Moderate,High,Excavator,High,High,High
+Underground Mining,Lead,Hard,High,Low,Drill,High,High,High
+Solution Mining,Uranium,Hard,Moderate,Moderate,Haul Truck,High,High,Low
+Surface Mining,Zinc,Hard,Low,High,Bulldozer,High,High,Moderate
+Underground Mining,Diamond,Very Hard,High,Low,Drill,High,High,High
